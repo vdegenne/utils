@@ -1,0 +1,38 @@
+{
+	"name": "@vdegenne/utils",
+	"version": "1.0.1",
+	"description": "My js/ts utils",
+	"main": "./lib/index.js",
+	"types": "./lib/index.d.ts",
+	"scripts": {
+		"build": "wireit"
+	},
+	"wireit": {
+		"build": {
+			"command": "tsc --pretty",
+			"clean": "if-file-deleted",
+			"files": [
+				"./tsconfig.json",
+				"./src"
+			],
+			"output": [
+				"./lib"
+			]
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/vdegenne/utils.git"
+	},
+	"keywords": [],
+	"author": "Valentin Degenne",
+	"license": "ISC",
+	"type": "commonjs",
+	"bugs": {
+		"url": "https://github.com/vdegenne/utils/issues"
+	},
+	"homepage": "https://github.com/vdegenne/utils#readme",
+	"files": [
+		"./lib"
+	]
+}
