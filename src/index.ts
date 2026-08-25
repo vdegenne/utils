@@ -1,5 +1,7 @@
 // import {type PropertyValues} from 'snar'
 
+export {getViewportVisibleText} from './getViewportVisibleText.js'
+
 export function copyToClipboard(text: string | number) {
 	navigator.clipboard.writeText(text + '')
 }
